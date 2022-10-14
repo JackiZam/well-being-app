@@ -1,16 +1,23 @@
-// Copyright 2018 The Flutter team. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
 import 'dart:html';
 import 'package:flutter/material.dart';
-import 'package:well_being_app/app/pheeling_app.dart';
 
-void main() {
-  runApp(const PheelingApp());
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+  @override
+  State<HomePage> createState() => HomePageState();
 }
 
-/* Moved this to home.dart in ui, but it removed the nav bar at the bottom- fix
+class HomePageState extends State<HomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Home Page"),
+      ),
+    );
+  }
+}
+
 class NavBar extends StatefulWidget {
   const NavBar({super.key});
   @override
@@ -42,4 +49,3 @@ class NavBarState extends State<NavBar> {
         ));
   }
 }
-*/
