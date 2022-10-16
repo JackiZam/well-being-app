@@ -8,7 +8,7 @@ class PheelingApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: '_title',
+      title: 'Pheeling',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),

@@ -11,25 +11,8 @@ class HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Home Page"),
-      ),
-    );
-  }
-}
-
-class NavBar extends StatefulWidget {
-  const NavBar({super.key});
-  @override
-  State<NavBar> createState() => NavBarState();
-}
-
-class NavBarState extends State<NavBar> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
         appBar: AppBar(
-          title: const Text('BottomNavigationBar'),
+          title: const Text('Home Page'),
         ),
         bottomNavigationBar: BottomNavigationBar(
           items: const <BottomNavigationBarItem>[

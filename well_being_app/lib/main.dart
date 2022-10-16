@@ -5,41 +5,8 @@
 import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:well_being_app/app/pheeling_app.dart';
+import 'package:well_being_app/ui/home.dart';
 
 void main() {
   runApp(const PheelingApp());
 }
-
-/* Moved this to home.dart in ui, but it removed the nav bar at the bottom- fix
-class NavBar extends StatefulWidget {
-  const NavBar({super.key});
-  @override
-  State<NavBar> createState() => NavBarState();
-}
-
-class NavBarState extends State<NavBar> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: const Text('BottomNavigationBar'),
-        ),
-        bottomNavigationBar: BottomNavigationBar(
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-              icon: Icon(Icons.history_edu),
-              label: 'Logs',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: 'Home',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.settings),
-              label: 'Settings',
-            ),
-          ],
-        ));
-  }
-}
-*/
